@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Rizwan Mohammad Chowdhury — QA Automation and DevOps portfolio"
+    />
+    <title>Rizwan Chowdhury | QA Automation & DevOps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="canonical" href="https://rizwan7616.github.io/rizwan-portfolio/" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2358dfc0'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='%23081320'%3ERC%3C/text%3E%3C/svg%3E"
+    />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:title" content="Rizwan Chowdhury | QA Automation & DevOps" /> -->
+    <meta property="og:title" content="Rizwan Chowdhury | Junior QA Automation Engineer | CI/CD & DevOps Projects"/>
+
+    <!-- <meta
+      property="og:description"
+      content="QA automation and DevOps portfolio: Selenium, Java, Docker, GitHub Actions CI, Trivy and Linux security scripting."
+    /> -->
+    <meta
+  property="og:description"
+  content="QA automation portfolio featuring Java, Selenium, TestNG, REST Assured, API testing, and GitHub Actions CI."
+    />
+    <meta property="og:url" content="https://rizwan7616.github.io/rizwan-portfolio/" />
+    <meta
+      property="og:image"
+      content="https://rizwan7616.github.io/rizwan-portfolio/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (() => {
+        let theme = null;
+        try {
+          theme = localStorage.getItem("portfolio-theme");
+        } catch (e) {}
+        document.documentElement.dataset.theme = theme === "light" ? "light" : "dark";
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <a class="brand" href="#home"><b>RC</b> Rizwan Chowdhury</a>
+      <div class="header-controls">
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to light mode"
+          title="Switch theme"
+        >
+          ☀️
+        </button>
+
+        <button
+          id="menuToggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-controls="nav"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+      <nav id="nav">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a
+        ><a href="#experience">Experience</a><a href="#credentials">Credentials</a
+        ><a href="#contact">Contact ↗</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero wrap" id="home">
+        <div>
+          <!-- <p class="eyebrow">● BASED IN TAIF, SAUDI ARABIA · OPEN TO OPPORTUNITIES</p>
+          <h1>Building reliable software through <em>quality, automation</em> & delivery.</h1>
+          <p class="lead">
+            I'm Rizwan Mohammad Chowdhury, a Computer Science graduate who automates software
+            testing and builds the CI/CD pipelines those tests run in, using Java, Selenium, Docker,
+            GitHub Actions, Python, and AWS.
+          </p> -->
+          <p class="eyebrow">● BASED IN TAIF, SAUDI ARABIA · OPEN TO OPPORTUNITIES</p>
+
+          <h1>Building reliable software through <em>quality and automation.</em></h1>
+
+          <!-- <p class="lead">
+            I'm Rizwan Mohammad Chowdhury, a Junior QA Automation Engineer
+            and Computer Science graduate with SQA internship experience.
+            I build UI and API automation using Java, Selenium WebDriver,
+            TestNG, REST Assured, and Maven, and run automated tests through
+            GitHub Actions CI. I also work with Docker, Python, and Linux.
+          </p> -->
+          <p class="lead">
+            I'm Rizwan Mohammad Chowdhury, a Computer Science graduate and
+            Junior QA Automation Engineer with SQA internship experience.
+            I build UI and API automation using Java, Selenium WebDriver,
+            TestNG, REST Assured, and Maven, and integrate automated testing
+            into GitHub Actions CI pipelines. My projects also cover Docker,
+            Python testing, Linux, and containerized applications.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">Explore my work ↓</a
+            ><a class="btn" href="RizwanCV.pdf" target="_blank" rel="noopener"
+              >Download CV ↓</a
+            ><a class="btn" href="mailto:rizwanchowdhury64@gmail.com">Contact me ↗</a>
+          </div>
+          <div class="stats">
+            <div><b>BSc</b><span>Computer Science & Engineering</span></div>
+            <div><b>4</b><span>Featured projects</span></div>
+            <div><b>6</b><span>Completed certifications</span></div>
+            <div><b>90+</b><span>Regression test cases at STARDUST</span></div>
+            <div><b>6</b><span>ISP modules covered</span></div>
+            <div><b>6</b><span>Completed certifications</span></div>
+          </div>
+        </div>
+        <div class="terminal">
+          <div class="termbar"><i></i><i></i><i></i><span>portfolio.config</span></div>
+          <pre><span>// What I bring to a team</span>
+<span class="purple">const</span> focus = [
+  <span class="green">"QA Automation"</span>,
+  <span class="green">"CI/CD & Containers"</span>,
+  <span class="green">"API Testing"</span>,
+  <span class="green">"Linux & Security"</span>
+];
+
+<span class="purple">return</span> <strong>reliable_delivery</strong>;</pre>
+          <footer>● Learning by building · Improving through testing</footer>
+        </div>
+      </section>
+      <section class="wrap section" id="about">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>Practical engineering.<br /><span class="muted">Continuous improvement.</span></h2>
+        <!-- <div class="two">
+          <p class="big">
+            I’m a Computer Science and Engineering graduate with a Management Information Systems
+            minor, interested in building software that is testable, dependable, and easier to
+            deliver.
+          </p>
+          <div class="copy">
+            <p>
+              My experience includes an SQA internship at STARDUST Telecom, where I worked with
+              Selenium WebDriver, Java, TestNG, Page Object Model, API validation, and defect
+              tracking. My portfolio extends that foundation into containerization, GitHub Actions
+              CI, Linux automation, and cloud-hosted applications.
+            </p>
+            <p>
+              I’m focused on opportunities in <b>QA Automation / SQA</b> and
+              <b>DevOps / CI/CD</b> where I can contribute and continue strengthening my hands-on
+              skills.
+            </p>
+            <div class="tags">
+              <span>Quality mindset</span><span>Automation-first</span><span>Collaborative</span
+              ><span>Continuous learning</span>
+            </div>
+          </div>
+        </div> -->
+        <div class="two">
+          <!-- <p class="big">
+            Junior QA Automation Engineer with a B.Sc. in Computer Science
+            and Engineering, an SQA internship at an ISP software company,
+            and a focus on dependable software delivery.
+          </p> -->
+          <p class="big">
+            Junior QA Automation Engineer with a B.Sc. in Computer Science
+            and Engineering, SQA internship experience at an ISP software
+            company, and hands-on projects in test automation and CI/CD.
+          </p>
+
+          <div class="copy">
+            <!-- <p>
+              At STARDUST Telecom, I automated regression tests using
+              Selenium WebDriver, Java, TestNG, and the Page Object Model.
+              I also tested billing and provisioning APIs using Postman,
+              tracked defects, and worked on cross-browser issues.
+            </p> -->
+            <p>
+              At STARDUST Telecom, I automated regression tests using
+              Selenium WebDriver, Java, TestNG, and the Page Object Model.
+              I also tested billing and provisioning APIs using Postman,
+              tracked defects, and investigated cross-browser issues.
+            </p>
+            <!-- <p>
+              My personal projects extend this experience into API
+              automation, CI pipelines, Docker containers, Python testing,
+              and security scanning.
+            </p> -->
+            <p>
+              My projects extend this experience into API automation,
+              automated build and test pipelines, Docker-based application
+              containers, Python testing, and security scanning.
+            </p>
+            <!-- <p>
+              I'm seeking opportunities in <b>QA Automation, Software
+              Quality Assurance, and Test Engineering</b>, with supporting
+              knowledge of CI/CD and containerization.
+            </p> -->
+            <p>
+              I'm seeking opportunities in <b>QA Automation, Software Quality
+              Assurance, and Test Engineering</b>, while also exploring junior
+              <b>DevOps and CI/CD engineering</b> roles that align with my
+              automation, containerization, and pipeline projects.
+            </p>
+            <div class="tags">
+              <span>UI Automation</span>
+              <span>API Testing</span>
+              <span>Regression Testing</span>
+              <span>CI/CD Piplelines</span>
+              <span>Docker</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="wrap section" id="skills">
+        <p class="eyebrow">02 / TOOLKIT</p>
+        <h2>Skills & technologies</h2>
+        <p class="intro">Tools and concepts used across my experience, learning, and projects.</p>
+        <div class="skills">
+          <article>
+            <i>⌘</i>
+            <h3>QA & Test Automation</h3>
+            <p>
+              Selenium WebDriver · TestNG · JUnit · PyTest · REST Assured · WireMock · POM · Postman · Maven · Regression testing · API testing
+            </p>
+          </article>
+          <article>
+            <i>⇄</i>
+            <h3>DevOps & Cloud</h3>
+            <p>
+              Docker · Docker Compose · GitHub Actions · CI/CD fundamentals · AWS EC2 · Git · GitHub
+            </p>
+          </article>
+          <article>
+            <i>⌨</i>
+            <h3>Programming</h3>
+            <p>Java · Python · JavaScript · PHP · SQL · C++</p>
+          </article>
+          <article>
+            <i>◈</i>
+            <h3>Systems & Security</h3>
+            <p>
+              Linux · log analysis · Python automation · networking fundamentals · Trivy in CI
+              workflows
+            </p>
+          </article>
+          <article>
+            <i>▤</i>
+            <h3>Web & Data</h3>
+            <p>Spring Boot · REST APIs · MySQL · HTML5 · CSS3 · XML</p>
+          </article>
+          <article>
+            <i>◎</i>
+            <h3>Tools</h3>
+            <p>VS Code · IntelliJ IDEA · Android Studio · NetBeans</p>
+          </article>
+        </div>
+      </section>
+      <section class="wrap section" id="projects">
+        <p class="eyebrow">03 / SELECTED WORK</p>
+        <h2>Projects built to solve problems.</h2>
+        <!-- <p class="intro">
+          Testing, delivery automation, cloud deployment, and security-focused scripting.
+        </p> -->
+        <p class="intro">
+          Practical QA automation, API testing, CI/CD workflows,
+          containerization, and application development.
+        </p>
+        <div class="projects">
+          <article class="project">
+            <small>PROJECT 01 · QA AUTOMATION</small>
+            <div class="art">
+              <span>SELENIUM · API TESTS · CI</span>
+            </div>
+            <h3>QA Automation Framework</h3>
+            <p>
+              Built a Java UI and API automation framework using the
+              Page Object Model, Selenium WebDriver, TestNG, REST Assured,
+              and WireMock for API mocking. The full test suite runs through
+              GitHub Actions on every push.
+            </p>
+            <div class="tags">
+              <span>Java</span>
+              <span>Selenium</span>
+              <span>TestNG</span>
+              <span>REST Assured</span>
+              <span>WireMock</span>
+              <span>Maven</span>
+              <span>GitHub Actions</span>
+            </div>
+            <div class="project-links">
+              <a
+                class="link"
+                href="https://github.com/Rizwan7616/QA_Automation_Framework"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View source on GitHub ↗</a
+              >
+              <a
+                class="link"
+                href="https://github.com/Rizwan7616/QA_Automation_Framework/actions"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Pipeline runs ↗</a
+              >
+            </div>
+          </article>
+          <article class="project featured">
+            <small>PROJECT 02 · CI/CD / BACKEND</small>
+            <div class="diagram">
+              <b>CODE</b> → <b>TEST</b> → <b>DOCKER</b> → <b class="greenbox">BUILD</b>
+            </div>
+            <h3>Spring Boot REST API with CI/CD Pipeline</h3>
+            <p>
+              Spring Boot REST API with application and health-check endpoints. Containerized with
+              Docker and Docker Compose, with GitHub Actions running Maven tests and building a
+              Docker image.
+            </p>
+            <div class="tags">
+              <span>Java 21</span><span>Spring Boot</span><span>Maven</span><span>Docker</span
+              ><span>GitHub Actions</span>
+            </div>
+            <div class="project-links">
+              <a
+                class="link"
+                href="https://github.com/Rizwan7616/CICD_Springboot"
+                target="_blank"
+                rel="noopener"
+                >View source on GitHub ↗</a
+              >
+              <a
+                class="link"
+                href="https://github.com/Rizwan7616/CICD_Springboot/actions"
+                target="_blank"
+                rel="noopener"
+                >Pipeline runs ↗</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <small>PROJECT 03 · DEVSECOPS</small>
+            <div class="art shield">✓ <span>lint · test · scan</span></div>
+            <h3>Containerized REST API with CI Pipeline</h3>
+            <p>
+              Containerized a lightweight Python REST API with a non-root runtime and multi-stage
+              Docker build. Automated linting, PyTest checks, and Trivy vulnerability scanning in
+              GitHub Actions.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>Docker</span><span>PyTest</span><span>Trivy</span>
+            </div>
+            <div class="project-links">
+              <a
+                class="link"
+                href="https://github.com/Rizwan7616/Microservices_CICD_Pipeline"
+                target="_blank"
+                rel="noopener"
+                >View source on GitHub ↗</a
+              >
+              <a
+                class="link"
+                href="https://github.com/Rizwan7616/Microservices_CICD_Pipeline/actions"
+                target="_blank"
+                rel="noopener"
+                >Pipeline runs ↗</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <small>PROJECT 04 · FULL STACK / CLOUD</small>
+            <div class="art cloud">☁ <span>APP ↔ MYSQL</span></div>
+            <h3>Skill Synergy</h3>
+            <p>
+              Educational collaboration platform for academic resource management and grading, using
+              a web stack, MySQL relational data, and AWS EC2 deployment. Includes 5 user roles and 8 database tables
+            </p>
+            <div class="tags">
+              <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>AWS EC2</span>
+            </div>
+            <a
+              class="link"
+              href="https://github.com/Rizwan7616/Skill_Synergy"
+              target="_blank"
+              rel="noopener"
+              >View source on GitHub ↗</a
+            >
+          </article>          
+          <article class="project">
+            <small>PROJECT 05 · SECURITY AUTOMATION</small>
+            <div class="art logs">
+              <span>auth.log · failed password</span><span>source IP detected</span
+              ><span class="red">threshold exceeded !</span><span>firewall action prepared</span>
+            </div>
+            <span class="sample-caption">Illustrative sample, not real log data</span>
+            <h3>SSH Brute Force Log Detector</h3>
+            <p>
+              Python parser for Linux authentication logs that groups suspicious failed-login
+              activity, identifies IPs using threshold rules, and generates host-level UFW block
+              commands.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>Regex</span><span>Linux</span><span>UFW</span>
+            </div>
+            <a
+              class="link"
+              href="https://github.com/Rizwan7616/Security_Log_Analyzer"
+              target="_blank"
+              rel="noopener"
+              >View source on GitHub ↗</a
+            >
+          </article>
+        </div>
+      </section>
+      <section class="wrap section" id="experience">
+        <p class="eyebrow">04 / EXPERIENCE</p>
+        <h2>Professional experience</h2>
+        <div class="timeline">
+          <article>
+            <small>NOV 2024 — JAN 2025 · INTERNSHIP</small>
+            <h3>Software Quality Assurance (SQA) Intern</h3>
+            <h4>STARDUST Telecom Ltd. <span>· Dhaka, Bangladesh</span></h4>
+            <ul>
+              <li>
+                Automated 90+ regression test cases across 6 enterprise ISP
+                modules using Selenium WebDriver, Java, TestNG, and the
+                Page Object Model, reducing manual regression time from
+                8 hours to 3 hours.
+              </li>
+              <li>
+                Executed 12 functional and boundary test cases on billing
+                and provisioning REST APIs using Postman, uncovering 5 defects.
+              </li>
+              <li>
+                Tracked 8 defects through logging, triage, retesting, and
+                closure with developers, and resolved 3 cross-browser issues
+                across Chrome, Firefox, and Edge.
+              </li>
+            </ul>
+            <div class="tags">
+              <span>Selenium</span><span>Java</span><span>TestNG</span><span>Postman</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="wrap section" id="credentials">
+        <p class="eyebrow">05 / CREDENTIALS</p>
+        <h2>Learning backed by credentials.</h2>
+        <div class="credentials">
+          <article>
+            <b>IBM</b>
+            <div>
+              <h3>Applied DevOps Engineering</h3>
+              <p>Professional Certificate</p>
+              <a
+                class="link credential-link"
+                href="https://coursera.org/verify/professional-cert/ORGTSX9NK1TS"
+                target="_blank"
+                rel="noopener"
+                >verify</a
+              >
+            </div>
+          </article>
+          <article>
+            <b class="blue">G</b>
+            <div>
+              <h3>IT Automation with Python</h3>
+              <p>Google · Professional Certificate</p>
+              <a
+                class="link credential-link"
+                href="https://coursera.org/verify/professional-cert/YI1I8DNGQW4Q"
+                target="_blank"
+                rel="noopener"
+                >verify</a
+              >
+            </div>
+          </article>
+          <article>
+            <b class="blue">G</b>
+            <div>
+              <h3>Cybersecurity</h3>
+              <p>Google · Professional Certificate</p>
+              <a
+                class="link credential-link"
+                href="https://coursera.org/verify/professional-cert/4I40SFIJKUX6"
+                target="_blank"
+                rel="noopener"
+                >verify</a
+              >
+            </div>
+          </article>
+          <article>
+            <b>IBM</b>
+            <div>
+              <h3>Cybersecurity Fundamentals</h3>
+              <p>Specialization</p>
+              <a
+                class="link credential-link"
+                href="https://coursera.org/verify/specialization/D5OI48F2S2IT"
+                target="_blank"
+                rel="noopener"
+                >verify</a
+              >
+            </div>
+          </article>
+          <article>
+            <b class="blue">G</b>
+            <div>
+              <h3>Google AI</h3>
+              <p>Professional Certificate</p>
+              <a
+                class="link credential-link"
+                href="https://coursera.org/verify/professional-cert/F4L93W1VE4QW"
+                target="_blank"
+                rel="noopener"
+                >verify</a
+              >
+            </div>
+          </article>
+          <article>
+            <b class="blue">C</b>
+            <div>
+              <h3>CCNAv7: Introduction to Networks</h3>
+              <p>Cisco Networking Academy</p>
+              <a
+                class="link credential-link"
+                href="https://drive.google.com/file/d/12NayBhOqFVhRI0zNjla_U94hM9n3PN_L/view?usp=sharing"
+                target="_blank"
+                rel="noopener"
+                >verify</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="wrap section" id="education">
+        <p class="eyebrow">06 / EDUCATION & RECOGNITION</p>
+        <h2>Education, research & honors</h2>
+        <div class="education">
+          <article>
+            <small>EDUCATION · 2021–2025</small>
+            <h3>B.Sc. in Computer Science and Engineering</h3>
+            <p>Independent University, Bangladesh</p>
+            <p class="muted">Minor in Management Information Systems · Dhaka, Bangladesh</p>
+          </article>
+          <article>
+            <small>IEEE CONFERENCE PUBLICATION</small>
+            <h3>Intelligent Traffic Information System Based on Internet of Things</h3>
+            <p>3rd World Conference on Communication & Computing (WCONF 2025), Raipur, India.</p>
+            <a
+              class="link"
+              href="https://doi.org/10.1109/WCONF64849.2025.11233677"
+              target="_blank"
+              rel="noopener"
+              >Read publication / DOI ↗</a
+            >
+          </article>
+          <article>
+            <small>HONORS</small>
+            <h3>IUB TechFest</h3>
+            <p>Winner and Runner-Up across university hardware/software showcases, 2022–2024.</p>
+          </article>
+          <article>
+            <small>ACADEMIC RECOGNITION</small>
+            <h3>Vice Chancellor’s Honor List</h3>
+            <p>Independent University, Bangladesh · 2022</p>
+          </article>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="wrap contact-inner">
+          <p class="eyebrow">07 / GET IN TOUCH</p>
+          <h2>Let's build something <em>reliable.</em></h2>
+          <p>
+            Interested in QA automation, software testing, or DevOps opportunities in
+            Saudi Arabia? I'd be glad to connect.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="mailto:rizwanchowdhury64@gmail.com">Email me ↗</a
+            ><a class="btn" href="RizwanCV.pdf" target="_blank" rel="noopener"
+              >Download CV ↓</a
+            ><a
+              class="btn"
+              href="https://www.linkedin.com/in/rizwanchowdhury/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn ↗</a
+            ><a class="btn" href="https://github.com/Rizwan7616" target="_blank" rel="noopener"
+              >GitHub ↗</a
+            >
+          </div>
+          <footer>
+            Taif, Saudi Arabia · rizwanchowdhury64@gmail.com · © <span id="year"></span> Rizwan
+            Chowdhury
+          </footer>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
