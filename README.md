@@ -6,7 +6,7 @@ Responsive static website built with HTML, CSS and vanilla JavaScript. Dark them
 
 1. `index.html`, `styles.css`, `script.js`: the site.
 2. `og-image.png`: preview image shown when the link is shared on WhatsApp, LinkedIn and similar apps.
-3. `RizwanCV_1PT.pdf`: your CV. The "Download CV" buttons link to this exact file name, so upload it to the repo root.
+3. `RizwanCV.pdf`: your CV. The "Download CV" buttons link to this exact file name, so upload it to the repo root.
 4. `images/` (optional): project screenshots, see below.
 
 ## Run locally
@@ -26,13 +26,14 @@ Put images in an `images/` folder, then add this inside the project card, under 
 
 Best proof per project:
 
-1. CICD Spring Boot and Containerized REST API: a green GitHub Actions run.
-2. SSH Brute Force Log Detector: real output from the script. Then remove the "Illustrative sample" caption.
-3. Skill Synergy: the running app.
+1. QA Automation Framework & API Contract Testing: Green CI pipeline runs from GitHub Actions executing the TestNG and REST Assured test suites.
+2. High-Throughput k6 Performance Engineering: A rendered Grafana k6 HTML test report showing latency thresholds (p95 < 200ms) and virtual user ramp-up metrics.
+3. Containerized REST API & Spring Boot CI/CD: Clean multi-stage Docker builds and successful Trivy vulnerability scan passes.
+4. TeamFlow Full-Stack Platform: UI interface screenshots alongside running MockMvc/H2 test harness execution outputs.
 
 ## Before sharing the link
 
-1. Confirm `RizwanCV_1PT.pdf` is in the repo, then click both Download CV buttons.
+1. Confirm `RizwanCV.pdf` is in the repo, then click both Download CV buttons.
 2. Click every link, including each certificate verify link.
 3. Check the page on a phone and a laptop, in both themes.
 4. Paste the address into WhatsApp or LinkedIn to see the preview. These apps cache previews, so test before sharing widely.
