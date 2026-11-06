@@ -432,6 +432,11 @@ h2 em {
   background: #7da8ff18;
   font-size: 21px;
 }
+.credentials article .orange {
+  color: #f3683e;
+  background: #7da8ff18;
+  font-size: 21px;
+}
 .credentials h3 {
   font-size: 15px;
   margin: 0 0 2px;
