@@ -427,16 +427,16 @@ h2 em {
   background: #58dfc018;
   color: #58dfc0;
 }
-.credentials article .blue {
+.credentials article .blue .orange {
   color: #9dbdff;
   background: #7da8ff18;
   font-size: 21px;
 }
-.credentials article .orange {
+/* .credentials article .orange {
   color: #f3683e;
   background: #7da8ff18;
   font-size: 21px;
-}
+} */
 .credentials h3 {
   font-size: 15px;
   margin: 0 0 2px;
