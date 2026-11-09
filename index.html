@@ -116,11 +116,10 @@
           </div>
           <div class="stats">
             <div><b>BSc</b><span>Computer Science & Engineering</span></div>
-            <div><b>4</b><span>Featured projects</span></div>
-            <div><b>6</b><span>Completed certifications</span></div>
+            <div><b id="stat-projects">0</b><span>Featured projects</span></div>
+            <div><b id="stat-certs">9</b><span>Completed certifications</span></div>
             <div><b>90+</b><span>Regression test cases at STARDUST</span></div>
             <div><b>6</b><span>ISP modules covered</span></div>
-            <div><b>6</b><span>Completed certifications</span></div>
           </div>
         </div>
         <div class="terminal">
@@ -782,7 +781,7 @@
         <p class="eyebrow">05 / CREDENTIALS</p>
         <h2>Learning backed by credentials.</h2>
         <div class="credentials">
-            <article>
+          <article class="credential-item">
             <b>UoM</b>
             <div>
               <h3>Software Testing and Automation</h3>
@@ -796,7 +795,7 @@
               >
             </div>
           </article>
-          <article>
+          <article class="credential-item">
             <b>C</b>
             <div>
               <h3>Software QA & Test Automation Engineering</h3>
@@ -810,7 +809,7 @@
               >
             </div>
           </article>
-          <article>
+          <article class="credential-item">
             <b>IBM</b>
             <div>
               <h3>Applied DevOps Engineering</h3>
@@ -824,7 +823,7 @@
               >
             </div>
           </article>
-          <article>
+          <article class="credential-item">
             <b>M</b>
             <div>
               <h3>Microsoft DevOps Engineering</h3>
@@ -838,7 +837,7 @@
               >
             </div>
           </article>
-          <article>
+          <article class="credential-item">
             <b class="blue">G</b>
             <div>
               <h3>IT Automation with Python</h3>
@@ -852,7 +851,7 @@
               >
             </div>
           </article>
-          <article>
+          <article class="credential-item">
             <b class="blue">G</b>
             <div>
               <h3>Cybersecurity</h3>
@@ -866,7 +865,7 @@
               >
             </div>
           </article>
-          <article>
+          <article class="credential-item">
             <b>IBM</b>
             <div>
               <h3>Cybersecurity Fundamentals</h3>
@@ -880,7 +879,7 @@
               >
             </div>
           </article>
-          <article>
+          <article class="credential-item">
             <b class="blue">G</b>
             <div>
               <h3>Google AI</h3>
@@ -894,7 +893,7 @@
               >
             </div>
           </article>
-          <article>
+          <article class="credential-item">
             <b class="blue">C</b>
             <div>
               <h3>CCNAv7: Introduction to Networks</h3>
@@ -974,5 +973,22 @@
       </section>
     </main>
     <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Automatically count project cards and update stats display
+        const projectElements = document.querySelectorAll('.projects .project');
+        const projectStatEl = document.getElementById('stat-projects');
+        if (projectStatEl && projectElements.length > 0) {
+          projectStatEl.textContent = projectElements.length;
+        }
+
+        // Automatically count credential articles and update stats display
+        const certElements = document.querySelectorAll('.credentials .credential-item');
+        const certStatEl = document.getElementById('stat-certs');
+        if (certStatEl && certElements.length > 0) {
+          certStatEl.textContent = certElements.length;
+        }
+      });
+    </script>
   </body>
 </html>
